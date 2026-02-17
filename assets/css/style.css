@@ -1,0 +1,26 @@
+.calc {
+  display: grid;
+  grid-template-columns repeat(4, 1fr);
+  width: 400px;
+  margin: 5rem auto;
+  gap: .5rem;
+}
+
+.calc > #input {
+  grid-column: 1 / 5;
+}
+
+.calc > img#input {
+  height: 8rem;
+  object-fit: fill;
+  width: 100%;
+}
+
+.calc > div#input {
+  font-size: 2rem;
+}
+
+.calc > .eq {
+  grid-column: span 4;
+}
+

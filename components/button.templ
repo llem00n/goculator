@@ -1,0 +1,5 @@
+package components
+
+templ Button(t string, label string) {
+  <button class={ "btn", t } hx-post={ "/" + t } hx-target="#input" hx-swap="outerHTML">{ label }</button>
+}
